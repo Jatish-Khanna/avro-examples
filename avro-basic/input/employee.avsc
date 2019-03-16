@@ -1,0 +1,73 @@
+{
+	"name": "Employee",
+	"type": "record",
+	"namespace": "com.example.avro.entity",
+	"fields": [
+		{
+			"name": "avroArray",
+			"type": {
+				"type": "array",
+				"items": "string"
+			}
+		},
+		{
+			"name": "avroMap",
+			"type": {
+				"type": "map",
+				"values": "string",
+				"doc": "A union is used to indicate that a field may have more than one type. They are represented as JSON arrays."
+			}
+		},
+		{
+			"type": [
+				"int",
+				"null"
+			],
+			"doc": "It will create Integer not int",
+			"name": "id"
+		},
+		{
+			"type": [
+				"long",
+				"null"
+			],
+			"doc": "It will create Long not long",
+			"name": "ld"
+		},
+		{
+			"type": "int",
+			"doc": "It will create int",
+			"name": "intField"
+		},
+		{
+			"type": "long",
+			"doc": "It will create long",
+			"name": "longField"
+		},
+		{
+			"doc": "aggregation",
+			"name": "address",
+			"type": {
+				"type": "record",
+				"name": "Address",
+				"fields": [
+					{
+						"name": "street",
+						"type": [
+							"string",
+							"null"
+						]
+					},
+					{
+						"name": "flatNo",
+						"type": "int"
+					},
+					{
+						"name": "pincode",
+						"type": "long"
+					}
+				]
+			}
+		}
+	]
+}
