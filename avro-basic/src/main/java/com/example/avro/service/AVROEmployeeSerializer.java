@@ -25,7 +25,7 @@ public class AVROEmployeeSerializer extends AVROEmployeeServiceBase {
 		firstEmployee.put("longField", 0l);
 
 		firstAddress.put("flatNo", 11);
-		firstAddress.put("pincode", 126101l);
+		firstAddress.put("pincode", "V6E 3T3");
 
 		firstEmployee.put("address", firstAddress);
 
