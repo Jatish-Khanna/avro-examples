@@ -12,19 +12,19 @@ The project to test the Avro features for converting JSON schema to Entity class
 ** Java class generation before compilation during generate-sources phases using avro-maven-plugin
 
 ** Using 
- // Loading schema from file
+ // Loading schema from file -
   Schmea, 
   
-  // Instantiate Object
+  // Instantiate Object -
   GenericData, 
   GenericData.Record, 
   Schema.getField sub-subschema, 
   
-  // Serialization
+  // Serialization -
   DatumWriter, 
   DataFileWriter
   
-  // Deserialization
+  // Deserialization -
   DatumReader
   DataFileReader
 
