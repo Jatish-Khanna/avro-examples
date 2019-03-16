@@ -64,7 +64,7 @@
      },
      {
       "name": "pincode",
-      "type": "long"
+      "type": "string"
      }
     ]
    }
